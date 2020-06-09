@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t anjoiype/node-docker-ci .
   - docker images anjoiype/node-docker-ci
+
+before_deploy:
+  - docker login -u anjoiype  -p demoPass321
+
+deploy:
+  provider: script
+  script: docker push anjoiype/node-docker-ci
+  on:
+    branch: master
