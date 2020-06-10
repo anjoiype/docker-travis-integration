@@ -16,7 +16,7 @@ client.connect(config.DB, { useNewUrlParser: true }, (err, db) => {
 });
 
 app.get('/', (req, res) => {
-    res.json("I have sucessfully integrated CI/CD testing #1");
+    res.json("I have sucessfully integrated CI/CD testing #2");
 });
 
 app.listen(PORT, () => {
