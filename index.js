@@ -16,7 +16,7 @@ client.connect(config.DB, { useNewUrlParser: true }, (err, db) => {
 });
 
 app.get('/', (req, res) => {
-    res.json("This image is published through CI/CD Pipeline");
+    res.json("This image is published through CI/CD Pipeline testing #1");
 });
 
 app.listen(PORT, () => {
